@@ -1,0 +1,8 @@
+# Ignorar arquivos de compilação do Java
+*.class
+# Ignorar pastas de metadados do IDE/Build
+/bin/
+/target/
+.vscode/
+# Ignorar o diretório onde as imagens são copiadas
+/imagens/premios/
