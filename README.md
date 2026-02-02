@@ -1,109 +1,132 @@
+<h1 align="center">🎯 Sistema de Metas Corporativas</h1>
 
-
-
-<h1 align="center">🎯 SISTEMA DE METAS CORPORATIVAS</h1>
-<p align="center">Controle estratégico de metas, premiações e desempenho empresarial</p>
-
----
-
-## 📌 Visão Geral do Sistema
-
-O **Sistema de Metas Corporativas** é uma aplicação desenvolvida em **Java**, projetada para empresas que desejam acompanhar, gerenciar e impulsionar o desempenho de seus colaboradores através de **metas**, **premiações** e **indicadores de produtividade**.
-
-Ele organiza a comunicação entre três níveis hierárquicos:
-
-- **RH** → Administração geral de colaboradores, departamentos e metas  
-- **Supervisores** → Gestão do seu departamento e aprovação de metas concluídas  
-- **Colaboradores** → Acompanhamento de metas e premiações recebidas  
-
-O objetivo central é **tornar o processo de metas mais transparente, rápido e motivador**, criando um ambiente de resultados e reconhecimento.
+<p align="center">
+Aplicação desktop desenvolvida em Java para gerenciamento de metas, desempenho e premiações em ambientes corporativos
+</p>
 
 ---
 
-## 🏛️ Arquitetura de Usuários
+## 📌 Visão Geral
 
-### 👥 **1. Colaborador**
-- Visualiza suas metas individuais  
-- Acompanha o status (pendente, em andamento, concluída, aprovada, reprovada)  
-- Confere **premiações** relacionadas às metas concluídas  
-- Envia metas concluídas para aprovação do supervisor  
+O **Sistema de Metas Corporativas** é uma aplicação desktop desenvolvida em **Java**, com foco no controle estratégico de metas, acompanhamento de desempenho e incentivo por meio de premiações.
+
+O sistema simula um **ambiente corporativo real**, organizando usuários por **níveis hierárquicos** e aplicando **regras de negócio**, como aprovação de metas, controle de acesso por perfil e histórico de desempenho.
+
+Este projeto foi desenvolvido com o objetivo de **praticar lógica de programação, arquitetura em camadas, integração com banco de dados relacional e fluxo de sistemas empresariais**.
 
 ---
 
-### 🧭 **2. Supervisor**
-- Gerencia colaboradores do seu próprio departamento  
+## 👥 Perfis de Usuário e Funcionalidades
+
+### 👤 Colaborador
+- Visualiza apenas suas próprias metas  
+- Acompanha o status das metas (pendente, em andamento, concluída, aprovada ou reprovada)  
+- Envia metas concluídas para aprovação  
+- Visualiza premiações recebidas  
+
+---
+
+### 🧭 Supervisor
+- Gerencia colaboradores do seu departamento  
 - Atribui metas individuais  
-- Acompanha o **histórico de metas** do departamento  
-- Possui uma área exclusiva de **Aprovações**, onde:
-  - Recebe metas concluídas por colaboradores  
-  - Pode **aprovar ou rejeitar** com justificativa  
-- Monitora desempenho geral do time  
+- Avalia metas enviadas para aprovação  
+- Aprova ou reprova metas com justificativa  
+- Acompanha o desempenho geral do time  
 
 ---
 
-### 🏢 **3. RH (Recursos Humanos)**
-Usuário com **poder administrativo total**:
-
-- Cadastra colaboradores  
-- Cadastra departamentos  
-- Cadastra metas corporativas  
-- Visualiza **todos os históricos** da empresa:
-  - Histórico de metas por departamento  
-  - Histórico de colaboradores  
-- Acompanha indicadores e métricas globais  
-
-Este perfil garante governança e controle sobre todo o sistema.
+### 🏢 RH (Administrador)
+- Cadastra colaboradores e departamentos  
+- Gerencia metas corporativas  
+- Visualiza históricos completos da empresa  
+- Possui acesso total ao sistema  
 
 ---
 
-## 🎯 Objetivo Estratégico do Sistema
+## 🔄 Fluxo de Funcionamento
 
-O sistema foi criado para resolver problemas comuns em empresas:
-
-- 🔸 Falta de organização no acompanhamento de metas  
-- 🔸 Falta de transparência entre supervisor e colaborador  
-- 🔸 Processos manuais e demorados  
-- 🔸 Não incentivo ao atingimento de resultados  
-
-Com esta plataforma:
-
-- 🎉 Colaboradores se sentem motivados por prêmios e reconhecimento  
-- 📊 Supervisores têm controle e visão do desempenho do seu time  
-- 🏢 RH possui gestão macro, segura e centralizada  
+1. O RH cadastra colaboradores e departamentos  
+2. O supervisor atribui metas aos colaboradores  
+3. O colaborador executa e envia a meta para aprovação  
+4. O supervisor aprova ou reprova a meta  
+5. Após aprovação, a premiação é liberada  
+6. O RH acompanha métricas e históricos  
 
 ---
-## 🖥️ Estrutura Técnica (Resumo)
 
-- **Linguagem:** Java  
-- **Banco de Dados: MySQL
-- **Interface:** Java Swing  
+## 🧠 Arquitetura do Sistema
+
+1. conexao/ → Conexão com o banco de dados
+2. dao/ → Acesso a dados (DAO + JDBC)
+3. modelos/ → Entidades e regras de domínio
+4. telas/ → Interface gráfica (Java Swing)
+5. lib/ → Dependências do projeto
+
+
+O projeto segue uma organização inspirada no padrão **MVC com DAO**, comum em aplicações Java corporativas.
 
 ---
-## 📸 **Preview Visual**
+
+## 🗄️ Banco de Dados
+
+- **MySQL**
+- Conexão via **JDBC**
+- Criação automática de:
+  - Banco de dados
+  - Tabelas
+  - Triggers
+- Uso de **triggers** para manter histórico de colaboradores desativados
+- Inserção automática de dados iniciais (seed)
+
+---
+
+## 🖥️ Interface Gráfica
+
+- Desenvolvida com **Java Swing**
+- Telas específicas para cada perfil de usuário
+- Eventos integrados ao banco de dados
+- Atualização dinâmica de informações
+
+---
+
+## 📸 Preview do Sistema
 
 <div align="center">
 
 <img src="https://github.com/user-attachments/assets/afc98d69-18b1-4af8-a697-536b12809c2c" />
+<img src="https://github.com/user-attachments/assets/65897b82-fc6e-4ed7-a18b-2dc67753d68e" />
+<img src="https://github.com/user-attachments/assets/ad484ff6-91b3-4818-9841-164d5f11cc09" />
+<img src="https://github.com/user-attachments/assets/342de02b-0c65-4166-9abd-58a771d5b5df" />
+<img src="https://github.com/user-attachments/assets/faf5199b-54bf-4ce2-b3c1-d5bbcb02bcaa" />
+<img src="https://github.com/user-attachments/assets/20dc52d1-8c48-4caa-ba25-af3be4454051" />
 
-<img width="876" height="580" alt="Captura de tela 2025-11-14 155149" src="https://github.com/user-attachments/assets/65897b82-fc6e-4ed7-a18b-2dc67753d68e" />
-
-<img width="779" height="485" alt="Captura de tela 2025-11-14 155209" src="https://github.com/user-attachments/assets/ad484ff6-91b3-4818-9841-164d5f11cc09" />
-
-<img width="885" height="583" alt="Captura de tela 2025-11-14 155303" src="https://github.com/user-attachments/assets/342de02b-0c65-4166-9abd-58a771d5b5df" />
-
-
-<img width="776" height="491" alt="Captura de tela 2025-11-14 155340" src="https://github.com/user-attachments/assets/faf5199b-54bf-4ce2-b3c1-d5bbcb02bcaa" />
-
-<img width="771" height="485" alt="Captura de tela 2025-11-14 155353" src="https://github.com/user-attachments/assets/20dc52d1-8c48-4caa-ba25-af3be4454051" />
+</div>
 
 ---
-## 📊 Fluxo Geral do Sistema
 
-```mermaid
-flowchart TD
-    A[RH cadastra colaborador] --> B[Supervisor atribui metas]
-    B --> C[Colaborador executa a meta]
-    C --> D[Colaborador envia para aprovação]
-    D --> E[Supervisor aprova ou reprova]
-    E --> F[Premiação é liberada para o colaborador]
-    F --> G[RH acompanha relatórios e histórico]
+## 🚀 Tecnologias Utilizadas
+
+- Java  
+- Java Swing  
+- MySQL  
+- JDBC  
+
+---
+
+## 📚 Aprendizados com o Projeto
+
+- Organização de código em camadas  
+- Integração Java com banco de dados relacional  
+- Uso de DAO e JDBC puro  
+- Implementação de regras de negócio  
+- Criação de triggers e controle de histórico  
+- Simulação de sistemas corporativos reais  
+
+---
+
+## ▶️ Como Executar
+
+1. Certifique-se de que o MySQL esteja em execução  
+2. Configure usuário e senha no arquivo de conexão  
+3. Execute a classe principal do projeto  
+4. O banco de dados e as tabelas serão criados automaticamente  
