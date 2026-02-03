@@ -1,12 +1,20 @@
-<h1 align="center">🎯 Sistema de Metas Corporativas</h1>
+<h1 align="center"> Sistema de Metas Corporativas</h1>
 
 <p align="center">
 Aplicação desktop desenvolvida em Java para gerenciamento de metas, desempenho e premiações em ambientes corporativos
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java_Swing-007396?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/JDBC-0052CC?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Concluído-2ECC71?style=for-the-badge" />
+</p>
+
 ---
 
-## 📌 Visão Geral
+##  Visão Geral
 
 O **Sistema de Metas Corporativas** é uma aplicação desktop desenvolvida em **Java**, com foco no controle estratégico de metas, acompanhamento de desempenho e incentivo por meio de premiações.
 
@@ -16,7 +24,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar lógica de programaç
 
 ---
 
-## 👥 Perfis de Usuário e Funcionalidades
+##  Perfis de Usuário e Funcionalidades
 
 ### 👤 Colaborador
 - Visualiza apenas suas próprias metas  
@@ -43,7 +51,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar lógica de programaç
 
 ---
 
-## 🔄 Fluxo de Funcionamento
+##  Fluxo de Funcionamento
 
 1. O RH cadastra colaboradores e departamentos  
 2. O supervisor atribui metas aos colaboradores  
@@ -54,57 +62,56 @@ Este projeto foi desenvolvido com o objetivo de **praticar lógica de programaç
 
 ---
 
-## 🧠 Arquitetura do Sistema
+##  Arquitetura do Sistema
 
-1. conexao/ → Conexão com o banco de dados
-2. dao/ → Acesso a dados (DAO + JDBC)
-3. modelos/ → Entidades e regras de domínio
-4. telas/ → Interface gráfica (Java Swing)
-5. lib/ → Dependências do projeto
-
+1. `conexao/` → Conexão com o banco de dados  
+2. `dao/` → Acesso a dados (DAO + JDBC)  
+3. `modelos/` → Entidades e regras de domínio  
+4. `telas/` → Interface gráfica (Java Swing)  
+5. `lib/` → Dependências do projeto  
 
 O projeto segue uma organização inspirada no padrão **MVC com DAO**, comum em aplicações Java corporativas.
 
 ---
 
-## 🗄️ Banco de Dados
+##  Banco de Dados
 
-- **MySQL**
-- Conexão via **JDBC**
+- **MySQL**  
+- Conexão via **JDBC**  
 - Criação automática de:
   - Banco de dados
   - Tabelas
-  - Triggers
-- Uso de **triggers** para manter histórico de colaboradores desativados
-- Inserção automática de dados iniciais (seed)
+  - Triggers  
+- Uso de **triggers** para manter histórico de colaboradores desativados  
+- Inserção automática de dados iniciais (seed)  
 
 ---
 
-## 🖥️ Interface Gráfica
+## Interface Gráfica
 
-- Desenvolvida com **Java Swing**
-- Telas específicas para cada perfil de usuário
-- Eventos integrados ao banco de dados
-- Atualização dinâmica de informações
+- Desenvolvida com **Java Swing**  
+- Telas específicas para cada perfil de usuário  
+- Eventos integrados ao banco de dados  
+- Atualização dinâmica de informações  
 
 ---
 
-## 📸 Preview do Sistema
+## Preview do Sistema
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/afc98d69-18b1-4af8-a697-536b12809c2c" />
-<img src="https://github.com/user-attachments/assets/65897b82-fc6e-4ed7-a18b-2dc67753d68e" />
-<img src="https://github.com/user-attachments/assets/ad484ff6-91b3-4818-9841-164d5f11cc09" />
-<img src="https://github.com/user-attachments/assets/342de02b-0c65-4166-9abd-58a771d5b5df" />
-<img src="https://github.com/user-attachments/assets/faf5199b-54bf-4ce2-b3c1-d5bbcb02bcaa" />
-<img src="https://github.com/user-attachments/assets/20dc52d1-8c48-4caa-ba25-af3be4454051" />
+<img src="https://github.com/user-attachments/assets/afc98d69-18b1-4af8-a697-536b12809c2c" width="400" />
+<img src="https://github.com/user-attachments/assets/65897b82-fc6e-4ed7-a18b-2dc67753d68e" width="400" />
+<img src="https://github.com/user-attachments/assets/ad484ff6-91b3-4818-9841-164d5f11cc09" width="400" />
+<img src="https://github.com/user-attachments/assets/342de02b-0c65-4166-9abd-58a771d5b5df" width="400" />
+<img src="https://github.com/user-attachments/assets/faf5199b-54bf-4ce2-b3c1-d5bbcb02bcaa" width="400" />
+<img src="https://github.com/user-attachments/assets/20dc52d1-8c48-4caa-ba25-af3be4454051" width="400" />
 
 </div>
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - Java  
 - Java Swing  
@@ -113,7 +120,7 @@ O projeto segue uma organização inspirada no padrão **MVC com DAO**, comum em
 
 ---
 
-## 📚 Aprendizados com o Projeto
+##  Aprendizados com o Projeto
 
 - Organização de código em camadas  
 - Integração Java com banco de dados relacional  
@@ -124,7 +131,7 @@ O projeto segue uma organização inspirada no padrão **MVC com DAO**, comum em
 
 ---
 
-## ▶️ Como Executar
+##  Como Executar
 
 1. Certifique-se de que o MySQL esteja em execução  
 2. Configure usuário e senha no arquivo de conexão  
