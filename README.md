@@ -26,7 +26,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar lógica de programaç
 
 ##  Perfis de Usuário e Funcionalidades
 
-### 👤 Colaborador
+###  Colaborador
 - Visualiza apenas suas próprias metas  
 - Acompanha o status das metas (pendente, em andamento, concluída, aprovada ou reprovada)  
 - Envia metas concluídas para aprovação  
@@ -34,7 +34,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar lógica de programaç
 
 ---
 
-### 🧭 Supervisor
+###  Supervisor
 - Gerencia colaboradores do seu departamento  
 - Atribui metas individuais  
 - Avalia metas enviadas para aprovação  
@@ -43,7 +43,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar lógica de programaç
 
 ---
 
-### 🏢 RH (Administrador)
+###  RH (Administrador)
 - Cadastra colaboradores e departamentos  
 - Gerencia metas corporativas  
 - Visualiza históricos completos da empresa  
@@ -101,8 +101,6 @@ O projeto segue uma organização inspirada no padrão **MVC com DAO**, comum em
 <div align="center">
 
 <img src="https://github.com/user-attachments/assets/afc98d69-18b1-4af8-a697-536b12809c2c" width="400" />
-<img src="https://github.com/user-attachments/assets/65897b82-fc6e-4ed7-a18b-2dc67753d68e" width="400" />
-<img src="https://github.com/user-attachments/assets/ad484ff6-91b3-4818-9841-164d5f11cc09" width="400" />
 <img src="https://github.com/user-attachments/assets/342de02b-0c65-4166-9abd-58a771d5b5df" width="400" />
 <img src="https://github.com/user-attachments/assets/faf5199b-54bf-4ce2-b3c1-d5bbcb02bcaa" width="400" />
 <img src="https://github.com/user-attachments/assets/20dc52d1-8c48-4caa-ba25-af3be4454051" width="400" />
